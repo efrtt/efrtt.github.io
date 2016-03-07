@@ -36,20 +36,27 @@
     text-align: center;
     color: #5E5D66;
   }
-  ul {
-    display: inline;
-    margin: 0;
-    padding: 0;
-    background: white;
-    font-family: 'Raleway', sans-serif;
-  }
-  li a {
-    display: inline;
-  	padding: 30px;
-  	background: white;
-  	color: black;
-  	text-decoration: none;
-  }
+.menu  {
+  height: 80px;
+  background: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+.menu ul {
+  height: auto;
+  padding: 20px 0;
+}
+.menu li {
+  display: inline;
+  padding: 0 20px;
+}
+.menu li a {
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  background: red;
+}
   iframe {
     margin: 30px 0 30px 0;
   }
@@ -62,10 +69,11 @@
   </div>
 </div>
 <center>
- <ul>
-  <a href="/form.html"><li>COMMISSION FORM</li></a>
-  <a href="/info.html"><li>COMMISION INFO</li></a>
- </ul>
+<div class="menu">
+<ul>
+  <li><a href="/form.html">COMMISSION FORM</a></li>
+  <li><a href="/info.html">COMMISION INFO</a></li>
+</ul>
 </center>
 <center><iframe src="https://docs.google.com/forms/d/1jsgKMeCWH0C94UbRbQuzFNvxKTKtjwWI_OmsfJpuYAM/viewform?embedded=true" width="760" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></center>
 </body>
