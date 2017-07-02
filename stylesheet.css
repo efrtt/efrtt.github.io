@@ -64,12 +64,18 @@ body {
 .content-holder img {
   max-width: 100%;
   margin: .5em 0;
-  transition: .25s;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
 }
 
 .content-holder img:hover {
   transform: scale(1.2);
-  transition: .25s;
+  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
 }
 
 .credit {

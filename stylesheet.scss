@@ -1,5 +1,6 @@
 //imported fonts
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Open+Sans:400,700,800');
+@import 'mixins';
 //variables
 $purple: #C8C0E9;
 $background-color: #EBEAEF;
@@ -59,10 +60,10 @@ body {
   img {
     max-width: 100%;
     margin: .5em 0;
-    transition: .25s;
+    @include transitions(.2s);
     &:hover {
       transform: scale(1.2);
-      transition: .25s;
+      @include transitions(.2s);
     }
   }
 }
