@@ -68,6 +68,24 @@ body {
   }
 }
 
+.proj-link {
+  background: $purple;
+  padding: 1em;
+  margin-top: .2em;
+  margin-right: .5em;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include transitions(.3s);
+
+  &:hover {
+    background: fade-out($purple, 0.4);
+    @include transitions(.3s);
+  }
+}
+
 .credit {
   font-family: 'Merriweather';
   font-size: .75em;
@@ -76,15 +94,16 @@ body {
   text-align:center;
 }
 
+//responsive design stuff
 @media only screen and (max-width: 700px) {
   html {
     font-size: 15px;
   }
   .content {
-    width: 80%;
+    width: 80%; //make content wider
   }
   .content-holder p, .header p {
-    font-size: 1.5em;
+    font-size: 1.5em; //make font bigger
   }
   .content-holder img {
     max-width: 80%;
