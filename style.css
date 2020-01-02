@@ -30,10 +30,10 @@ h2 {
 }
 
 #link-content {
-    width: 65%;
+    width: 50%;
     margin-top: 5%;
     border-collapse: collapse;
-
+    align-content: center;
 }
 #link-content tr {
     vertical-align: top;
@@ -50,13 +50,12 @@ h2 {
 #link-content th::after {
     display:block;
     content: '';
-    width: 10em;
+    width: 12%;
     height: 2px;
     background: rgb(90, 122, 164);
     position: absolute;
-    margin-left: 1em;
     margin-top: .5em;
-    transition: all ease .3s;
+    margin-left: 1%;
 }
 
 #link-content td {
@@ -72,4 +71,16 @@ h2 {
 }
 #link-content a:hover{ 
     letter-spacing: .1em;
+}
+
+.search {
+    margin-top: 100px;
+}
+.search input[type=text]{
+    width: 500px;
+    padding: 1em;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .1em;
+    border: 1px solid rgb(158, 158, 158);
+    background-color: rgb(250, 250, 250);
 }
