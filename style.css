@@ -84,3 +84,16 @@ h2 {
     border: 1px solid rgb(158, 158, 158);
     background-color: rgb(250, 250, 250);
 }
+td:last-of-type {
+    padding: 0 !important;
+}
+.other {
+    display: block;
+    max-height: 185px !important;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 1em 2em;
+}
+.other::-webkit-scrollbar-button {
+    display: none;
+}
