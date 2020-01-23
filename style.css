@@ -61,6 +61,7 @@ h2 {
 #link-content td {
     padding-top: 1em;
     padding-left: 2em;
+    text-overflow: clip;
 }
 
 #link-content a {
