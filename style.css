@@ -10,16 +10,16 @@
 }
 
 body {
-    background-color: rgb(76, 87, 62);
+    background-color: #222622;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: rgb(197, 182, 162);
 }
 
 h1 {
-    color: rgb(216, 152, 100);
+    color: #D9B68B;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     letter-spacing: .25em;
     text-align: center;
     margin-top: 150px;
@@ -65,7 +65,7 @@ h2 {
 }
 
 #link-content a {
-    color: rgb(216, 152, 100);
+    color: #7D7D61;
     text-decoration: none;
     line-height: 2em;
     transition: all ease .3s;
