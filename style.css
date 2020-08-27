@@ -46,6 +46,7 @@ h2 {
     text-align: left;
     font-weight: normal;
     letter-spacing: .15em;
+    font-style: italic;
     color: #C99974;
 }
 #link-content th::after {
