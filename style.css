@@ -76,18 +76,6 @@ h2 {
     letter-spacing: .1em;
 }
 
-.search {
-    margin-top: 100px;
-}
-.search input[type=text]{
-    width: 500px;
-    padding: 1em;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: .1em;
-    color: #D9B68B;
-    border: 1px solid #51594C;
-    background-color: #7D7D61;
-}
 td:last-of-type {
     padding: 0 !important;
 }
