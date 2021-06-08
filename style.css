@@ -11,6 +11,7 @@
 
 body {
     background-color: rgb(139, 168, 168);
+    background: linear-gradient(180deg, #e8d4c0 -100%, rgb(139, 168, 168) 50%, #577e7f 200%) fixed;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: #e7ceb3;
@@ -18,7 +19,6 @@ body {
 
 .title {
     margin-top: 150px;
-    background: black;
 }
 
 h1 {
@@ -31,8 +31,9 @@ h1 {
 
 .ducky {
     position: absolute;
-    margin: -35px 0 0 calc((100% - 575px) * 0.5);
+    margin: -20px 0 0 calc((100% - 525px) * 0.5);
     width: 100px;
+    transform: rotate(-10deg)
 }
 
 h2 {
@@ -78,7 +79,7 @@ h2 {
 }
 
 #link-content a {
-    color: #d06e57;
+    color: #cf6b54;
     text-decoration: none;
     line-height: 2em;
     transition: all ease .3s;
