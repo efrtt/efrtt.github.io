@@ -3,10 +3,11 @@
     padding:0;
     box-sizing: border-box;
     /*border: 1px red solid;*/
+    font-smooth: antialiased;
 }
 
 ::selection {
-    background: rgba(139, 168, 168, 0.5);
+    background: rgba(231, 206, 179, .35);
 }
 
 body {
@@ -39,65 +40,71 @@ h1 {
 h2 {
     font-weight: 100;
     letter-spacing: .1em;
-}
-
-#link-content {
-    width: 50%;
-    margin-top: 5%;
-    border-collapse: collapse;
-    align-content: center;
-}
-#link-content tr {
-    vertical-align: top;
-}
-#link-content td, th {
-    width: 33.33333333333333333333333333%;
-    padding: .5em 1em;
-}
-#link-content th {
-    text-align: left;
-    font-weight: normal;
-    letter-spacing: .15em;
+    font-size: 1.05em;
     font-style: italic;
-    color: #e7ceb3;
+    padding-bottom: .5em;
+    text-align: center;
 }
-#link-content th::after {
-    display:block;
+/* line below box title
+h2::after {
+    display: block;
     content: '';
-    width: 12%;
+    width: 11%;
     height: 2px;
     background: #547c7e;
     position: absolute;
     margin-top: .5em;
     margin-left: 1%;
-}
+    overflow-x: clip;
+}*/
 
-#link-content td {
-    padding-top: 1em;
-    padding-left: 2em;
+#link-content {
+    width: 50%;
+    margin-top: 7.5%;
+    border-collapse: collapse;
+    align-content: center;
+}
+.box {
+    float: left;
+    width: calc((100%/3) - 25px);
+    margin-right: 25px;
+    text-align: left;
+    font-weight: normal;
+    letter-spacing: .15em;
+    color: #e7ceb3;
+    padding: 1em .25em .25em 0em;
     text-overflow: clip;
+    min-height: 220px;
 }
 
-#link-content a {
+.box {
+    background: rgba(231, 206, 179, .25);
+    border-radius: 10px;
+    box-shadow: 10px 7px rgb(89, 101, 116, .25);
+}
+
+.links {
+    padding: 0em 2em .75em 3em;
+    //background: rgba(255,0,0,.25);
+}
+
+.box a {
     color: #cf6b54;
     text-decoration: none;
     line-height: 2em;
     transition: all ease .3s;
+    letter-spacing: normal;
+    font-size: 1em;
 }
-#link-content a:hover{ 
+.box a:hover{ 
     letter-spacing: .1em;
 }
 
-td:last-of-type {
-    padding: 0 !important;
-}
 .other {
     display: block;
-    max-height: 185px !important;
+    max-height: 150px !important;
     overflow: scroll;
     overflow-x: hidden;
-    padding: 1em 2em;
-}
-.other::-webkit-scrollbar-button {
-    display: none;
+    padding: .5em 2em .75em 3em;
+    scrollbar-width: none;
 }
