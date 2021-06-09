@@ -105,6 +105,6 @@ h2::after {
     max-height: 150px !important;
     overflow: scroll;
     overflow-x: hidden;
-    padding: .5em 2em .75em 3em;
+    padding: 0 2em .75em 3em;
     scrollbar-width: none;
 }
