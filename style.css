@@ -7,15 +7,15 @@
 }
 
 ::selection {
-    background: rgba(231, 206, 179, .35);
+    background: rgba(252, 224, 198, .35);
 }
 
 body {
-    background-color: rgb(139, 168, 168);
-    background: linear-gradient(180deg, #e8d4c0 -100%, rgb(139, 168, 168) 50%, #577e7f 200%) fixed;
+    background-color: rgb(146, 184, 166);
+    background: linear-gradient(180deg, rgb(252, 224, 198) -100%, rgb(146, 184, 166) 50%, rgb(134, 175, 158) 200%) fixed;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    color: #e7ceb3;
+    color: rgb(252, 224, 198);
 }
 
 .title {
@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    color: #e7ceb3;
+    color: rgb(252, 224, 198);
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     letter-spacing: .25em;
@@ -32,9 +32,15 @@ h1 {
 
 .ducky {
     position: absolute;
-    margin: -30px 0 0 calc((100% - 575px) * 0.5);
-    width: 120px;
-    transform: rotate(-10deg)
+    margin: -50px 0 0 calc((100% - 605px) * 0.5);
+    width: 150px;
+    //transform: rotate(-10deg)
+}
+.ducky2 {
+    position: absolute;
+    margin: -50px 0 0 calc((100% + 270px) * 0.5);
+    width: 150px;
+    //transform: rotate(-10deg)
 }
 
 h2 {
@@ -71,14 +77,14 @@ h2::after {
     text-align: left;
     font-weight: normal;
     letter-spacing: .15em;
-    color: #e7ceb3;
+    color: rgb(252, 224, 198);
     padding: 1em .25em .25em 0em;
     text-overflow: clip;
     min-height: 220px;
 }
 
 .box {
-    background: rgba(231, 206, 179, .35);
+    background: rgba(252, 224, 198, .45);
     border-radius: 10px;
     box-shadow: 10px 7px rgb(89, 101, 116, .25);
 }
@@ -89,7 +95,7 @@ h2::after {
 }
 
 .links a, .other a {
-    color: #db574e;
+    color: rgb(235, 124, 88);
     text-decoration: none;
     line-height: 2em;
     transition: all ease .3s;
@@ -97,7 +103,7 @@ h2::after {
     font-size: 1em;
 }
 .links a:hover, .other a:hover { 
-    color: #ff9c94;
+    color: rgb(249, 155, 123);
     letter-spacing: .1em;
 }
 
