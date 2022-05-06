@@ -13,8 +13,9 @@
 }
 
 body {
-    background-color: rgb(146, 184, 166);
-    background: linear-gradient(180deg, rgb(252, 224, 198) -100%, rgb(146, 184, 166) 50%, rgb(134, 175, 158) 200%) fixed;
+    background-color: rgb(61, 36, 94);
+    background: url('starry_background.png') no-repeat center center fixed;
+    background-size: cover;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     color: rgb(252, 224, 198);
@@ -32,19 +33,6 @@ h1 {
     text-align: center;
 }
 
-.ducky {
-    position: absolute;
-    margin: -50px 0 0 calc((100% - 605px) * 0.5);
-    width: 150px;
-    //transform: rotate(-10deg)
-}
-.ducky2 {
-    position: absolute;
-    margin: -50px 0 0 calc((100% + 270px) * 0.5);
-    width: 150px;
-    //transform: rotate(-10deg)
-}
-
 h2 {
     font-weight: 100;
     letter-spacing: .1em;
@@ -53,18 +41,6 @@ h2 {
     padding-bottom: .5em;
     text-align: center;
 }
-/* line below box title
-h2::after {
-    display: block;
-    content: '';
-    width: 11%;
-    height: 2px;
-    background: #547c7e;
-    position: absolute;
-    margin-top: .5em;
-    margin-left: 1%;
-    overflow-x: clip;
-}*/
 
 #link-content {
     width: 50%;
@@ -88,16 +64,15 @@ h2::after {
 .box {
     background: rgba(252, 224, 198, .45);
     border-radius: 10px;
-    box-shadow: 10px 7px rgb(89, 101, 116, .25);
+    box-shadow: 10px 7px rgba(40, 22, 63, 0.25);
 }
 
 .links, .other {
     padding: 0em 2em .75em 3em;
-    //background: rgba(255,0,0,.25);
 }
 
 .links a, .other a {
-    color: rgb(235, 124, 88);
+    color: #ff9e58;
     text-decoration: none;
     line-height: 2em;
     transition: all ease .3s;
@@ -105,7 +80,7 @@ h2::after {
     font-size: 1em;
 }
 .links a:hover, .other a:hover { 
-    color: rgb(249, 155, 123);
+    color: rgb(255, 192, 140);
     letter-spacing: .1em;
 }
 
