@@ -15,15 +15,16 @@
   height: 100vh;
   background: white;
   border-radius: 5vh;
-  border: 1vh solid black;
+  border: .5vh solid #cfd6e4;
   overflow: hidden;
   font-family: sans-serif;
 }
 
 .header {
-  background: purple;
+  background: #ffcf88;
   height: 25%;
   color: white;
+  padding: 0 2vh;
 }
 
 .month {
@@ -36,6 +37,7 @@
 .days {
   display: flex;
   flex-direction: row;
+  padding: 0 2vh;
 }
 
 h1 {
@@ -70,5 +72,5 @@ h1 {
 }
 
 .current-day {
-  background: purple;
+  background: #ffcf88;
 }
