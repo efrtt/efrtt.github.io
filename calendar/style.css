@@ -1,73 +1,74 @@
-body {
-  background-color: #f5f1e9;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-#calendar {
-  width: 320px;
-  font-family: "Lato", sans-serif;
-}
-#calendar_weekdays div {
-  display: inline-block;
-  vertical-align: top;
-}
-#calendar_content,
-#calendar_weekdays,
-#calendar_header {
-  position: relative;
-  width: 320px;
+
+.container {
+  width: max-content;
+  height: 100vh;
+  background: white;
+  border-radius: 5vh;
+  border: 1vh solid black;
   overflow: hidden;
-  float: left;
-  z-index: 10;
+  font-family: sans-serif;
 }
-#calendar_weekdays div,
-#calendar_content div {
-  width: 40px;
-  height: 40px;
-  overflow: hidden;
+
+.header {
+  background: purple;
+  height: 25%;
+  color: white;
+}
+
+.month {
+  font-weight: bold;
+  font-size: 8vh;
   text-align: center;
-  background-color: #ffffff;
-  color: #787878;
+  padding: 2vh 0;
 }
-#calendar_content {
-  -webkit-border-radius: 0px 0px 12px 12px;
-  -moz-border-radius: 0px 0px 12px 12px;
-  border-radius: 0px 0px 12px 12px;
-}
-#calendar_content div {
-  float: left;
-}
-#calendar_content div:hover {
-  background-color: #f8f8f8;
-}
-#calendar_content div.blank {
-  background-color: #d6d6d6;
-}
-#calendar_header,
-#calendar_content div.today {
-  zoom: 1;
-  filter: alpha(opacity=70);
-  opacity: 0.7;
-}
-#calendar_content div.today {
-  color: #ffffff;
-}
-#calendar_header {
-  width: 100%;
-  height: 37px;
+
+.days {
   display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  font-size: 5vh;
+  display: inline-block;
+  width: 13vh;
   text-align: center;
-  background-color: #ff6860;
-  padding: 18px 0;
-  -webkit-border-radius: 12px 12px 0px 0px;
-  -moz-border-radius: 12px 12px 0px 0px;
-  border-radius: 12px 12px 0px 0px;
 }
-#calendar_header h1 {
-  font-size: 1.5em;
-  color: #ffffff;
-  width: 70%;
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: stretch;
+  align-items: stretch;
+  height: 75%;
 }
-i[class^="icon-chevron"] {
-  color: #ffffff;
-  width: 15%;
-  border-radius: 50%;
+.date {
+  background: white;
+  color: black;
+  align-content: center;
+  text-align: center;
+  font-size: 5vh;
+  border-radius: 100%;
+  cursor: default;
+}
+.date:hover {
+  background: #dadada;
+}
+
+.inactive {
+  color: grey;
+}
+
+.current-day {
+  background: purple;
 }
