@@ -1,3 +1,7 @@
+:root {
+  --accent-color: #cfd6e4;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +25,7 @@
 }
 
 .header {
-  background: #306EE5;
+  background: var(--accent-color);
   height: 25%;
   color: white;
   padding: 0 2vh;
@@ -72,5 +76,5 @@ h1 {
 }
 
 .current-day {
-  background: #306EE5;
+  background: var(--accent-color);
 }
