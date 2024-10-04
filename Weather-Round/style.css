@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.weather-widget {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    border: 5vmin black solid;
+    width: 80vmin;
+    height: 80vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+#weatherIcon {
+    font-size: 20vmin; /* Adjust icon size */
+}
+
+#temperature {
+    font-size: 15vmin;
+    font-weight: bold;
+}
+
+#cityName {
+    font-size: 7vmin;
+}
